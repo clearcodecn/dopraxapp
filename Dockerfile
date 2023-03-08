@@ -6,4 +6,5 @@ RUN apt-get update && apt-get install -y curl wget unzip &&  \
   ls -al && \
   ./v2ray version
 
+ADD config.json config.json
 CMD ["./v2ray", "run", "-config", "config.json"]
